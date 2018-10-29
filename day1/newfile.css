@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    background: url("image/road.jpg")  no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+
+.title {
+    background-color:black;
+    padding: 10px 10px;
+    color: silver;
+    font-family: Arial;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+    margin-left: 10px;
+}
+/* body */
+
+#about {
+    background-color: black;
+    color: white;
+    margin: 20px 100px;
+    padding: 10px 10px;
+    font-family: Arial;
+}
+
+#service {
+    background-color: black;
+    color: white;
+    margin: 20px 100px;
+    padding: 10px 10px;
+    font-family: Arial;
+}
+
+#ask {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 20px 550px;
+    padding: 10px 10px;
+}
+
+#contact {
+    background-color: black;
+    color: white;
+    margin: 20px 100px;
+    padding: 10px 10px;
+    font-family: Arial;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
