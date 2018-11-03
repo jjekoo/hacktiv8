@@ -57,6 +57,14 @@ html {
     font-family: Arial;
 }
 
+#member {
+    background-color: black;
+    color: white;
+    margin: 20px 100px;
+    padding: 10px 10px;
+    font-family: Arial;
+}
+
 /* footer */
 
 footer {
