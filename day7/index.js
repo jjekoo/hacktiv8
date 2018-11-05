@@ -1,6 +1,6 @@
-var name = "jeko";
-var age = 15;
-var money = 40000;
+var name;
+var age;
+var money;
 
 
 if (name) {

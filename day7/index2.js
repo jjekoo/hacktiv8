@@ -1,6 +1,6 @@
-var name = "jeko";
-var age = 90;
-var money = 300000;
+var name;
+var age;
+var money;
 var juice = 50000;
 var anggur = 300000;
 
