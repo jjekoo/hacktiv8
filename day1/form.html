@@ -5,11 +5,18 @@
 <body>
     <form action="welcome.html" method="post">
         <div>
-            <label for="name">Name   :</label>
+            <label for="username">Username  :</label>
+            <input type="text" name="username">
+            <br>
+            <label for="password">Password  :</label>
+            <input type="password" name="psw">
+        </div>
+        <div>
+            <label for="name">Full-Name :</label>
             <input type="text" id="name" name="user_name">
         </div>
         <div>
-            <label for="bday">Birthday :</label>
+            <label for="bday">Birthday  :</label>
             <input type="date" name="bday">
         </div>
         <div>
@@ -30,6 +37,19 @@
         <div>
             <label for="address">Address :</label>
             <textarea id="address" name="user_address"></textarea>
+        </div>
+        <div>
+            <label for="bikes">What bike do you have:</label>
+            <input id="caferacer-checkbox" type="checkbox" name="skill" value="caferacer">
+            <label for="caferacer-checkbox">Cafe racer</label>
+            <input id="scrambler-checkbox" type="checkbox" name="skill" value="scrambler">
+            <label for="scrambler-checkbox">Scrambler</label>
+            <input id="tracker-checkbox" type="checkbox" name="skill" value="tracker">
+            <label for="tracker-checkbox">Tracker</label>
+            <input id="bobber-checkbox" type="checkbox" name="skill" value="bobber">
+            <label for="bobber-checkbox">Bobber</label>
+            <input id="other-checkbox" type="checkbox" name="skill" value="other">
+            <label for="other-checkbox">Other</label>
         </div>
         <div class="button">
         <button type="submit">Submit</button>
