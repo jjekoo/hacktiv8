@@ -26,50 +26,20 @@
 
 /* NO.1 & NO.2 */
 
-function loopingAngka(a, b, c, d, e){
-  while (a < 9) {
-    a++;
-    if (a%2===0) {
-      console.log("Angka genap = " + a)
-    } else if (a%2===1){
-      console.log("Angka ganjil = " + a)
+function loopingAngka(num1, num2){
+    var i = num1;
+    for (i; i < num2; i++){
+        if (i%2===0){
+            console.log("Angka Genap = " + i)
+        } else {
+            console.log("Angka Ganjil = " + i)
+        }
     }
-  }
-  while (b < 27) {
-      b++;
-      if (b%2===0) {
-          console.log("Angka genap = " + b)
-      } else if (b%2===1) {
-          console.log("Angka ganjil = " + b)
-      }
-  }
-  while (c < 99) {
-      c++;
-      if (c%2===0) {
-          console.log("Angka genap = " + c)
-      } else if (c%2===1) {
-          console.log("Angka ganjil = " + c)
-      }
-  }
-  while (d < 25) {
-      d++;
-      if (d%2===0) {
-          console.log("Angka genap = " + d)
-      } else if (d%2===1) {
-          console.log("Angka ganjil = " + d)
-      }
-  }
-  while (e < 122) {
-      e++;
-      if (e%2===0) {
-          console.log("Angka genap = " + e)
-      } else if (e%2===1) {
-          console.log("Angka ganjil = " + e)
-      }
-  }
 }
 
-loopingAngka (5, 17, 33, 4, 99)
+loopingAngka(33, 99)
+loopingAngka(4, 25)
+loopingAngka(99, 122)
 
 /* NO.3 */
 
