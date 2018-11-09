@@ -26,48 +26,50 @@
 
 /* NO.1 & NO.2 */
 
-function loopingAngka(num1 = 5, num2 = 17, num3 = 33, num4 = 4, num5 = 99){
-  while(num1 < 9) {
-    num1++;
-    if (num1%2===0) {
-      console.log("Angka Genap = " + num1)
-    } else if (num1%2===1) {
-      console.log("AngkaGanjil = " + num1)
+function loopingAngka(a, b, c, d, e){
+  while (a < 9) {
+    a++;
+    if (a%2===0) {
+      console.log("Angka genap = " + a)
+    } else if (a%2===1){
+      console.log("Angka ganjil = " + a)
     }
   }
-  while(num2 < 28) {
-    num2++;
-    if (num2%2===0){
-      console.log("Angka Genap = " + num2)
-    } else if (num2%2===1) {
-      console.log("Angka Ganjil = " + num2)
-    }
+  while (b < 27) {
+      b++;
+      if (b%2===0) {
+          console.log("Angka genap = " + b)
+      } else if (b%2===1) {
+          console.log("Angka ganjil = " + b)
+      }
   }
-  while(num3 < 99) {
-    num3++;
-    if (num3%2===0) {
-      console.log("Angka Genap = " + num3)
-    } else if (num3%2===1) {
-      console.log ("Angka Ganjil = " + num3)
-    }
-  while(num4 < 25) {
-    num4++;
-    if (num4%2===0) {
-      console.log("Angka Genap = " + num4)
-    } else if (num4%2===1) {
-      console.log ("Angka Ganjil = " + num4)
-    }
-  while(num5 < 122) {
-    num5++;
-    if (num5%2===0) {
-      console.log("Angka Genap = " + num5)
-    } else if (num5%2===1) {
-      console.log ("Angka Ganjil = " + num5)
-    }
+  while (c < 99) {
+      c++;
+      if (c%2===0) {
+          console.log("Angka genap = " + c)
+      } else if (c%2===1) {
+          console.log("Angka ganjil = " + c)
+      }
+  }
+  while (d < 25) {
+      d++;
+      if (d%2===0) {
+          console.log("Angka genap = " + d)
+      } else if (d%2===1) {
+          console.log("Angka ganjil = " + d)
+      }
+  }
+  while (e < 122) {
+      e++;
+      if (e%2===0) {
+          console.log("Angka genap = " + e)
+      } else if (e%2===1) {
+          console.log("Angka ganjil = " + e)
+      }
   }
 }
 
-loopingAngka(5, 17)
+loopingAngka (5, 17, 33, 4, 99)
 
 /* NO.3 */
 
