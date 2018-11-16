@@ -22,11 +22,9 @@ function multiDimensi(num1, num2){
       arr2.push(arr1)
     }
       
-    return arr2
+  return arr2
 }
   
 console.log(multiDimensi(2, 5));
 console.log(multiDimensi(3, 4));
 console.log(multiDimensi(5, 2));
-
-  
