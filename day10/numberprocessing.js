@@ -27,7 +27,8 @@ function numberProcessing(numberArr){
     var oddi = numberArr.filter(
         function(i)
         {return i%2===1 }
-        );
+    );
+    
     var odds = oddi.join("-")
 
     var evan = numberArr.filter(
