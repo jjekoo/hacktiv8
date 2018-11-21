@@ -5,6 +5,18 @@
 
 function numberProcessing(numberArr){
     
+    var odds = [];
+
+    var evens = [];
+
+    for(var i = 0; i < numberArr.length; i++){
+        if( numberArr[i]%2===1){
+            odds.push(numberArr[i])
+        } else {
+            evens.push(numberArr[i])
+        }
+    }
+    
     var mini = numberArr.sort(
         function(a, b) 
         {return a-b}
@@ -24,22 +36,7 @@ function numberProcessing(numberArr){
         mean += numberArr[i]/numberArr.length
     }
 
-    var oddi = numberArr.filter(
-        function(i)
-        {return i%2===1 }
-    );
-    
-    var odds = oddi.join("-")
-
-    var evan = numberArr.filter(
-        function(k)
-        {return k%2===0}
-    );
-
-    var even = evan.join("-")
-
-  
-  return "Min: " + min +  ", Max: " + max + ", Mean: " + Math.round(mean) + ", Odds: " + odds + ", Evens: " + even
+  return "Min: " + min +  ", Max: " + max + ", Mean: " + Math.round(mean) + ", Odds: " + odds.join('-') + ", Evens: " + evens.join('-')
 }
   
 console.log(numberProcessing([1, 3, 5, 1, 2, 8, 10, 0, 3]));
