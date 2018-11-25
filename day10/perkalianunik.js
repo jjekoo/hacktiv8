@@ -9,7 +9,6 @@ function perkalianUnik(arr) {
       }
     }
     result.push(angka);
-    console.log(i)
   }
   return result;
 }
