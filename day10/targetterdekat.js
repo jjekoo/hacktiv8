@@ -1,5 +1,3 @@
-//Jika o lebih dari satu 
-
 function targetTerdekat(arr) {
 
     // you can only write your code here!
