@@ -10,22 +10,24 @@ function threeStepsAB (text) {
 
     for(var i = 0; i < text.length; i++){
         if(text[i] === 'a'){
-            for(var j = i; j <= count; j++){
+            var j = i;
+            while(j <= count + i){
                 if(text[j] === ' '){
                     count++;
-                }
-                if(text[j] === 'b'){
+                } if (text[j] === 'b'){
                     cond = true;
-                } 
+                }
+                j++;
             }
         }
     }
-    return cond
-}
-  
+    return cond;
+}  
   // TEST CASES
 console.log(threeStepsAB('lane borrowed')); // true
 console.log(threeStepsAB('i am sick')); // false
 console.log(threeStepsAB('you are boring')); // true
 console.log(threeStepsAB('barbarian')); // true
 console.log(threeStepsAB('bacon and meat')); // false
+console.log(threeStepsAB('test a c c b')); // true
+console.log(threeStepsAB('test a c c c b')); // false
