@@ -27,8 +27,7 @@ console.log(kaskus())
 
 function kaskus(num1,num2){
     var angka = [];
-    var i = num1;
-    for (i; i < num2; i++){
+    for (var i = num1; i < num2; i++){
         if (i%15===0){
             angka.push("KASKUS")
         } else if (i%6===0){

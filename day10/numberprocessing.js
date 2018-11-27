@@ -3,7 +3,26 @@
 // Tentukan nilai minimum, maksimum, rata-rata (genapkan ke bilangan terdekat), 
 // bilangan ganjil dan bilangan genap.
 
+//Pembulatan secara manual tanpa Math.round
+function pembulatan(num){
+    var result = [];
+
+    for(var i = 0; i < num; i++){
+        var decimal = num - i;
+    }
+
+    if(decimal >= 0.5){
+        var x = 1 - decimal
+        result.push(num + x)
+    } else if (decimal < 0.5){
+        result.push(num - decimal)
+    }
+    return result.join('')
+}
+
 function numberProcessing(numberArr){
+
+    //Mencari angka ganjil dan genap
     
     var odds = [];
 
@@ -16,6 +35,8 @@ function numberProcessing(numberArr){
             evens.push(numberArr[i])
         }
     }
+
+    //Mencari angka terkecil
     
     var mini = numberArr.sort(
         function(a, b) 
@@ -24,19 +45,24 @@ function numberProcessing(numberArr){
     
     var min = mini.slice(0, 1);
 
+    //Mencari angka terbesar
+
     var maxi = numberArr.sort(
         function(a, b)
         {return b-a}
         );
 
     var max = maxi.slice(0, 1)
+
+    //Mencari nilai rata rata
     
     var mean = 0;
+
     for(var i = 0; i < numberArr.length; i++){
         mean += numberArr[i]/numberArr.length
     }
 
-  return "Min: " + min +  ", Max: " + max + ", Mean: " + Math.round(mean) + ", Odds: " + odds.join('-') + ", Evens: " + evens.join('-')
+  return "Min: " + min +  ", Max: " + max + ", Mean: " + pembulatan(mean) + ", Odds: " + odds.join('-') + ", Evens: " + evens.join('-')
 }
   
 console.log(numberProcessing([1, 3, 5, 1, 2, 8, 10, 0, 3]));
