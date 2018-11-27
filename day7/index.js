@@ -15,7 +15,7 @@ if (name) {
         console.log("Uang tidak cukup!")
     }
 } else {
-    console.log("Anda tidak boleh masuk!");
+    console.log("Mohon isi data anda terlebih dahulu");
 }
 
 /* CARA KEDUA */
@@ -42,5 +42,5 @@ if (name) {
         }
     }
 } else {
-    console.log("Anda tidak boleh masuk!");
+    console.log("Mohon isi data anda terlebih dahulu");
 }
