@@ -2,20 +2,9 @@ function csvToObject (text) {
     // Your code here
     var arr = text.split(',')
     var obj = {
-        name:'',
-        email:'',
-        gender:''
-    }
-    for(var i = 0; i < arr.length; i++){
-        if(i === 0){
-            obj.name = arr[i]
-        }
-        if(i === 1){
-            obj.email = arr[i]
-        }
-        if(i === 2){
-            obj.gender = arr[i]
-        }
+        name: arr[0],
+        email: arr[1],
+        gender: arr[2]
     }
     return obj
   }
