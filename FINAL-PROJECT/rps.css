@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: gray;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+}
+
+.player {
+  border: 2px solid black;
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Arial";
+  font-size: 40pt;
+  border-radius: 25px;
+}
+
+#board {
+  position: absolute;
+  left: 50%;
+  margin-left: -310px;
+}
+
+.weps {
+  border: 2px solid black;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Arial";
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 200px;
+}
+
+.weps:hover {
+  background-color: white;
+}
+
+#weapons {
+  position: absolute;
+  left: 50%;
+  margin-left: -163px;
+  top: 50%;
+}
+
+#message {
+  text-align: center;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  top: 85%;
+  background-color: grey;
+}

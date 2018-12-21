@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ROCK PAPER SCISSOR</title>
+    <link rel="stylesheet" href="rps.css" />
+    <script src="rps.js"></script>
+  </head>
+  <body>
+    <header><h1>ROCK PAPER SCISSOR</h1></header>
+    <div id="message"></div>
+    <table id="board">
+      <tr>
+        <th>YOU</th>
+        <th>COMPUTER</th>
+      </tr>
+      <tr>
+        <td class="player" id="player-one"></td>
+        <td class="player" id="player-two"></td>
+      </tr>
+    </table>
+
+    <table id="weapons">
+      <tr>
+        <td class="weps" onclick="startGame('ROCK')">
+          <img src="images/rock.png" style="width: 100%" />
+        </td>
+        <td class="weps" onclick="startGame('PAPER')">
+          <img src="images/paper.png" style="width: 100%" />
+        </td>
+        <td class="weps" onclick="startGame('SCISSOR')">
+          <img src="images/scissor.png" style="width: 100%" />
+        </td>
+      </tr>
+    </table>
+
+    <button onclick="startGame()">RESTART</button>
+  </body>
+</html>
