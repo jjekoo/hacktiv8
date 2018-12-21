@@ -52,10 +52,11 @@ header {
   position: absolute;
   left: 50%;
   margin-left: -163px;
-  top: 50%;
+  top: 60%;
 }
 
 #message {
+  position: sticky;
   text-align: center;
 }
 
@@ -65,4 +66,21 @@ button {
   margin-left: -35px;
   top: 85%;
   background-color: grey;
+}
+
+/* score board */
+
+#score-board {
+  position: absolute;
+  border: 5px dotted black;
+  top: 23%;
+  left: 3%;
+}
+
+.score {
+  border: 2px solid black;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-size: 20pt;
 }

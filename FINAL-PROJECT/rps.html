@@ -11,6 +11,17 @@
   <body>
     <header><h1>ROCK PAPER SCISSOR</h1></header>
     <div id="message"></div>
+    <table id="score-board">
+      <tr>
+        <th>YOU</th>
+        <th>COMP</th>
+      </tr>
+      <tr>
+        <td class="score" id="player-score"></td>
+        <td class="score" id="comp-score"></td>
+      </tr>
+    </table>
+
     <table id="board">
       <tr>
         <th>YOU</th>
@@ -25,17 +36,17 @@
     <table id="weapons">
       <tr>
         <td class="weps" onclick="startGame('ROCK')">
-          <img src="images/rock.png" style="width: 100%" />
+          <img src="assets/rock.png" style="width: 100%" />
         </td>
         <td class="weps" onclick="startGame('PAPER')">
-          <img src="images/paper.png" style="width: 100%" />
+          <img src="assets/paper.png" style="width: 100%" />
         </td>
         <td class="weps" onclick="startGame('SCISSOR')">
-          <img src="images/scissor.png" style="width: 100%" />
+          <img src="assets/scissor.png" style="width: 100%" />
         </td>
       </tr>
     </table>
 
-    <button onclick="startGame()">RESTART</button>
+    <button onclick="location.reload()">RESTART</button>
   </body>
 </html>
